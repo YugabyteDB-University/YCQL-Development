@@ -13,7 +13,7 @@ tasks:
       --master_flags "yb_num_shards_per_tserver=1,ysql_num_shards_per_tserver=1" \
       --num_shards_per_tserver 1  \
       --placement_info "azure.region1.zone1,azure.region1.zone2,azure.region1.zone3" 
-      gp ports await 5433
+      gp ports await 9042
       gp open 01_Lab_Setup.ipynb
       yb-ctl status
 ports:
