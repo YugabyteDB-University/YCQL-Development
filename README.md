@@ -1,9 +1,9 @@
-# YSQLPE01
+# YCQL-01
 
-YSQL Performance Explained
+YCQL Development Fundamentals
 
 ---
-This repository contains the notebook files for YSQL Performance Explained, a free course that is soon-to-be available at [university.yugabyte.com](
+This repository contains the notebook files for YCQL Development Fundamentals, a free course that is soon-to-be available at [university.yugabyte.com](
 https://university.yugabyte.com).
 
 Using Gitpod, you can run the notebook files in an on-demand VS Code, browser based environment.
