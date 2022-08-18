@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS tbl_products_by_wishlist;
 DROP TABLE IF EXISTS tbl_products_by_category;
 
 -- Search wishlists by user CREATE TABLE tbl_wishlists_by_user (
-CREATE TABLE tbl_wishlists_by_user (
+CREATE TABLE db_ybu.tbl_wishlists_by_user (
   user_id TEXT,
   wishlist_id UUID,
   name TEXT,
@@ -15,8 +15,8 @@ ORDER BY (name DESC);
 
 DESC tbl_wishlists_by_user
 
---Search for products in a wishlist 
-CREATE TABLE tbl_products_by_wishlist (
+-- Search for products in a wishlist 
+CREATE TABLE db_ybu.tbl_products_by_wishlist (
   wishlist_id UUID,
   wishlist_name TEXT,
   product_name TEXT,
@@ -31,7 +31,7 @@ ORDER BY (product_name DESC)
 DESC tbl_products_by_wishlist 
 
 -- Search products by category 
-CREATE TABLE tbl_products_by_category (
+CREATE TABLE db_ybu.tbl_products_by_category (
   category TEXT,
   product_id UUID,
   price DECIMAL,
