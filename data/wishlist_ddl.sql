@@ -13,7 +13,7 @@ CREATE TABLE db_ybu.tbl_wishlists_by_user (
 AND CLUSTERING
 ORDER BY (name DESC);
 
-DESC tbl_wishlists_by_user
+
 
 -- Search for products in a wishlist 
 CREATE TABLE db_ybu.tbl_products_by_wishlist (
@@ -28,7 +28,7 @@ CREATE TABLE db_ybu.tbl_products_by_wishlist (
 ORDER BY (product_name DESC)
   AND TRANSACTIONS = { 'enabled': true };
 
-DESC tbl_products_by_wishlist 
+
 
 -- Search products by category 
 CREATE TABLE db_ybu.tbl_products_by_category (
@@ -39,8 +39,7 @@ CREATE TABLE db_ybu.tbl_products_by_category (
   description TEXT,
   sku_details JSONB,
   PRIMARY KEY (category, price, product_id)
-) WITH TRANSACTIONS = { 'enabled': true }
-AND CLUSTERING
-ORDER BY (price DESC);
+) WITH CLUSTERING
+ORDER BY (price DESC)
+  AND TRANSACTIONS = { 'enabled': true };
 
-DESC tbl_products_by_category
