@@ -1,40 +1,45 @@
 -- #########################
 -- tbl_products_by_category 
 -- #########################
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Home Decor',
     49.99,
     13f77b74-cc05-42d2-9d78-3b937e2e22c1,
     'Beach Sunrise Photograph'
+    '4ft x 8ft canvas print'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'School',
     19.99,
     87c7624a-4af5-4347-922d-ab43ab32476b,
-    'Backpack'
+    'Backpack',
+    'Lap top sleeve, four pocket, water bottle holder'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name,description)
 VALUES (
     'Grocery',
     9.99,
     6eb8d774-8b03-4457-a8e9-710339ca7165,
-    'Hotdogs'
+    'Hotdogs',
+    '12 pack kosher ballpark hotdogs'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Office',
     649.99,
     c3650217-568c-42b1-aac3-ba855fe68efa,
-    'Desk'
+    'Desk',
+    'Automatic standing desk'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Kitchen Supplies',
     149.99,
     13f77b73-cc05-42d2-9d78-3b937e2e22c1,
-    'Buntu Chef''s Knife'
+    'Buntu Chef''s Knife',
+    'Sushi style rendering knife'
   );
 SELECT *
 FROM tbl_products_by_category;
