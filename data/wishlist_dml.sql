@@ -6,7 +6,7 @@ VALUES (
     'Home Decor',
     49.99,
     13f77b74-cc05-42d2-9d78-3b937e2e22c1,
-    'Beach Sunrise Photograph'
+    'Beach Sunrise Photograph',
     '4ft x 8ft canvas print'
   );
 
