@@ -1,41 +1,51 @@
 -- #########################
 -- tbl_products_by_category 
 -- #########################
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Home Decor',
     49.99,
     13f77b74-cc05-42d2-9d78-3b937e2e22c1,
-    'Beach Sunrise Photograph'
+    'Beach Sunrise Photograph',
+    '4ft x 8ft canvas print'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'School',
     19.99,
     87c7624a-4af5-4347-922d-ab43ab32476b,
-    'Backpack'
+    'Backpack',
+    'Lap top sleeve, four pocket, water bottle holder'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name,description)
 VALUES (
     'Grocery',
     9.99,
     6eb8d774-8b03-4457-a8e9-710339ca7165,
-    'Hotdogs'
+    'Hotdogs',
+    '12 pack kosher ballpark hotdogs'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Office',
     649.99,
     c3650217-568c-42b1-aac3-ba855fe68efa,
-    'Desk'
+    'Desk',
+    'Automatic standing desk'
   );
-INSERT INTO tbl_products_by_category(category, price, product_id, description)
+
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Kitchen Supplies',
     149.99,
     13f77b73-cc05-42d2-9d78-3b937e2e22c1,
-    'Buntu Chef''s Knife'
+    'Buntu Chef''s Knife',
+    'Sushi style rendering knife'
   );
+
 SELECT *
 FROM tbl_products_by_category;
 
@@ -49,6 +59,7 @@ VALUES (
     'Christmas',
     true
   );
+
 INSERT INTO tbl_wishlists_by_user (user_id, wishlist_id, name, is_public)
 VALUES (
     'jack-12345',
@@ -56,6 +67,7 @@ VALUES (
     'Baby Shower',
     true
   );
+
 INSERT INTO tbl_wishlists_by_user (user_id, wishlist_id, name, is_public)
 VALUES (
     'jackie-12345',
@@ -63,6 +75,7 @@ VALUES (
     'Mary''s Graduation',
     true
   );
+
 INSERT INTO tbl_wishlists_by_user (user_id, wishlist_id, name, is_public)
 VALUES (
     'birch-37510',
@@ -70,6 +83,7 @@ VALUES (
     'Christmas',
     true
   );
+
 INSERT INTO tbl_wishlists_by_user (user_id, wishlist_id, name, is_public)
 VALUES (
     'sam-90466',
@@ -77,6 +91,7 @@ VALUES (
     'Dad''s Birthday',
     true
   );
+
 INSERT INTO tbl_wishlists_by_user (user_id, wishlist_id, name, is_public)
 VALUES (
     'amina-85938',
@@ -84,6 +99,7 @@ VALUES (
     'Chloe''s Birthday',
     true
   );
+
 INSERT INTO tbl_wishlists_by_user (user_id, wishlist_id, name, is_public)
 VALUES (
     'alex-12345',
@@ -91,6 +107,7 @@ VALUES (
     'Jo''s Anniversary',
     false
   );
+
 SELECT *
 FROM tbl_wishlists_by_user;
 
@@ -140,10 +157,10 @@ INSERT INTO tbl_products_by_wishlist(
 VALUES (
     ffe2fdce-d177-11ec-9d64-0242ac120002,
     'Chloe''s Birthday',
-    'Desk',
+    'Bed',
     1,
-    69.99,
-    'Pink Desk'
+    649.99,
+    'Bunk Bed'
   );
 INSERT INTO tbl_products_by_wishlist(
     wishlist_id,
