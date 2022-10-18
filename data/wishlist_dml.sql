@@ -1,69 +1,49 @@
 -- #########################
 -- tbl_products_by_category 
 -- #########################
-INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description, sku_details)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Home Decor',
     49.99,
     13f77b74-cc05-42d2-9d78-3b937e2e22c1,
     'Beach Sunrise Photograph'
-    '4ft x 8ft canvas print',
-    '{
-      "product_id": 13f77b74-cc05-42d2-9d78-3b937e2e22c1, 
-      "warehouse_sku": b3600adb-bc52-406f-804d-25c204a9773a
-    }'
+    '4ft x 8ft canvas print'
   );
 
-INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description, sku_details)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'School',
     19.99,
     87c7624a-4af5-4347-922d-ab43ab32476b,
     'Backpack',
-    'Lap top sleeve, four pocket, water bottle holder',
-    '{
-      "product_id": 87c7624a-4af5-4347-922d-ab43ab32476b, 
-      "warehouse_sku": b3600adb-bc52-406f-804d-25c204a9773a
-    }'
+    'Lap top sleeve, four pocket, water bottle holder'
   );
 
-INSERT INTO tbl_products_by_category(category, price, product_id, product_name,description, sku_details)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name,description)
 VALUES (
     'Grocery',
     9.99,
     6eb8d774-8b03-4457-a8e9-710339ca7165,
     'Hotdogs',
-    '12 pack kosher ballpark hotdogs',
-    '{"
-      product_id": 6eb8d774-8b03-4457-a8e9-710339ca7165, 
-      "warehouse_sku": 16c0c4d4-53e9-45ba-ac77-e8a867936a2a
-    }'
+    '12 pack kosher ballpark hotdogs'
   );
 
-INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description, sku_details)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Office',
     649.99,
     c3650217-568c-42b1-aac3-ba855fe68efa,
     'Desk',
-    'Automatic standing desk',
-    '{
-      "product_id": c3650217-568c-42b1-aac3-ba855fe68efa, 
-      "warehouse_sku": a6af39a8-9f67-435b-8945-fc6a48cc3d14
-    }'
+    'Automatic standing desk'
   );
 
-INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description, sku_details)
+INSERT INTO tbl_products_by_category(category, price, product_id, product_name, description)
 VALUES (
     'Kitchen Supplies',
     149.99,
     13f77b73-cc05-42d2-9d78-3b937e2e22c1,
     'Buntu Chef''s Knife',
-    'Sushi style rendering knife',
-    '{"
-      product_id": 13f77b73-cc05-42d2-9d78-3b937e2e22c1, 
-      "warehouse_sku": 8d9a6935-a81e-4efc-a421-5ccdceed84aa
-    }'
+    'Sushi style rendering knife'
   );
 
 SELECT *
@@ -127,7 +107,7 @@ VALUES (
     'Jo''s Anniversary',
     false
   );
-  
+
 SELECT *
 FROM tbl_wishlists_by_user;
 
