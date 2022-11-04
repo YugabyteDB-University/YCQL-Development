@@ -3,6 +3,9 @@
 YCQL Development Fundamentals
 
 ---
+
+[](https://gitpod.io/button/open-in-gitpod.svg)
+
 This repository contains the notebook files for YCQL Development Fundamentals, a free course that is soon-to-be available at [university.yugabyte.com](
 https://university.yugabyte.com).
 
