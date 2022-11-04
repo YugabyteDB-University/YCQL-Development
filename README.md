@@ -1,4 +1,4 @@
-# YCQL-01
+# YCQL
 
 YCQL Development Fundamentals
 
@@ -27,7 +27,7 @@ How can I sign up for Gitpod?
 - To install the Gitpod browser extension, check out [https://www.gitpod.io/docs/quickstart#installing-the-gitpod-browser-extension](https://www.gitpod.io/docs/quickstart#installing-the-gitpod-browser-extension).
 
 How do I start?
-- Simply select this link: [https://gitpod.io/#https://github.com/YugabyteDB-University/YSQLPE01](https://gitpod.io/#https://github.com/YugabyteDB-University/YSQLPE01)
+- Simply select this link: [https://gitpod.io/#https://github.com/YugabyteDB-University/YCQL](https://gitpod.io/#https://github.com/YugabyteDB-University/YCQL)
 
 Why does it take 5 minutes to start up?
 - Gitpod builds a docker image for VS Code, related extensions, and YugabyteDB. This takes a few minutes. However, after your image is created, subsequent launches will be much faster.
