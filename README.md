@@ -34,7 +34,7 @@ Then, in a browser, open the Gitpod link for the GitHub repository. It's a prefi
 
 ## Start Gitpod for YCQL Development
 
-Here are the links to start the repository using Gitpod:
+Here is the link to start the repository using Gitpod:
 
 - [YCQL Development](https://gitpod.io/#https://github.com/YugabyteDB-University/YCQL-Development)
 
