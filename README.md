@@ -9,7 +9,7 @@ This repository is a lab resource in the free, **YugabyteDB YCQL Development** c
 > **YugabyteDB YCQL Development**
 >
 > Enroll for **FREE** at ...
-> [![Yugabyte University]](https://university.yugabyte.com/courses/yugabytedb-ycql-development).
+> [Yugabyte University](https://university.yugabyte.com/courses/yugabytedb-ycql-development).
 >
 
 ---
@@ -36,7 +36,7 @@ Then, in a browser, open the Gitpod link for the GitHub repository. It's a prefi
 
 Here are the links to start the repository using Gitpod:
 
-- [![YCQL Development]](https://gitpod.io/#https://github.com/YugabyteDB-University/YCQL-Development)
+- [YCQL Development](https://gitpod.io/#https://github.com/YugabyteDB-University/YCQL-Development)
 
 Once started, you can close the Get Started tab. Verify the following:
 
@@ -71,4 +71,4 @@ You can start, restart, and delete your Gitpod workspaces. After you sign in to 
 - Gitpod builds a docker image for VS Code, related extensions, and YugabyteDB. This takes a few minutes. However, after your image is created, subsequent launches will be much faster.
 
 **Where can I find help and support?**
-- You can ask questions in the discussion forum for this lab in the course player at Yugabyte University. Enroll for **FREE** at [![Yugabyte University]](https://university.yugabyte.com/courses/yugabytedb-ycql-development).
+- You can ask questions in the discussion forum for this lab in the course player at Yugabyte University. Enroll for **FREE** at [Yugabyte University](https://university.yugabyte.com/courses/yugabytedb-ycql-development).
