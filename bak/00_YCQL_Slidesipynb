@@ -1,18 +1,16 @@
 {
  "cells": [
   {
+   "attachments": {},
    "cell_type": "markdown",
    "metadata": {
     "deletable": false,
     "editable": false
    },
    "source": [
-    "### Import the notebook variables \n",
+    "# CurrDev --> Slides code, not a student notebook\n",
     "\n",
-    "The following Python cell creates and stores variables that all the notebooks in this lab will use. You can view these variables in the Jupyter tab.\n",
-    "\n",
-    "- To run the script, select Execute Cell (Play Arrow) in the left gutter of the cell.\n",
-    "- Verify the accuracy of the output values"
+    "### Import the notebook variables "
    ]
   },
   {
@@ -2647,22 +2645,6 @@
    "metadata": {},
    "source": [
     "If the row is still visible, wait a few more seconds to run the preceding cell. This will verify that the row has expired as expected."
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "deletable": false,
-    "editable": false
-   },
-   "source": [
-    "---\n",
-    "# All done!\n",
-    "In this lab, you completed the following:\n",
-    "\n",
-    "- Setup\n",
-    "  - Created the `ks_ybu` database with `ycqlsh`\n",
-    "  - Created tables and loaded data using DDL and DML scripts"
    ]
   }
  ],
