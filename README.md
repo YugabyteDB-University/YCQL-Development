@@ -1,6 +1,6 @@
 <div style="width:100%; background-color: #000041"><a target="_blank" href="http://university.yugabyte.com"><img src="assets/YBU_Logo.png" /></a></div>
 
-# YSQL Development
+# YCQL Development
 
 [YugabyteDB](https://www.yugabyte.com/) is the leading open source, distributed SQL database. The database has two APIs: YCQL and YSQL.
 
