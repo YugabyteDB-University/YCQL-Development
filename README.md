@@ -1,8 +1,8 @@
-![](assets/GitpodBanner.png)
+<div style="width:100%; background-color: #000041"><a target="_blank" href="http://university.yugabyte.com"><img src="assets/YBU_Logo.png" /></a></div>
 
-# YCQL Development
+# YSQL Development
 
-YugabyteDB is an open source, distributed SQL database. The database has two APIs: YCQL and YSQL.
+[YugabyteDB](https://www.yugabyte.com/) is the leading open source, distributed SQL database. The database has two APIs: YCQL and YSQL.
 
 This repository is a lab resource in the free, **YugabyteDB YCQL Development** course from Yugabyte University.
 
