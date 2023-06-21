@@ -5,11 +5,14 @@ ARG YB_PATH=/home/gitpod/yugabyte
 ARG YB_PATH_DATA=/home/gitpod/yugabyte-data
 ARG YB_DOWNLOAD=https://downloads.yugabyte.com/releases/2.17.3.0/yugabyte-2.17.3.0-b152-linux-x86_64.tar.gz
 ARG ROLE=gitpod
+ARG PYTHON_VERSION=3.9.6
 
 USER root
 RUN mkdir -p $YB_PATH 
 RUN chown -R $ROLE:$ROLE $YB_PATH 
-
+RUN pyenv install $PYTHON_VERSION \
+    && pyenv global $PYTHON_VERSION
+    
 USER $ROLE
 RUN curl -sSLo ./yugabyte.tar.gz $YB_DOWNLOAD \
   && tar -xvf yugabyte.tar.gz -C $YB_PATH --strip-components=1 \
