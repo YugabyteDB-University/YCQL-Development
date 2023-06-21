@@ -72,3 +72,13 @@ You can start, restart, and delete your Gitpod workspaces. After you sign in to 
 
 **Where can I find help and support?**
 - You can ask questions in the discussion forum for this lab in the course player at Yugabyte University. Enroll for **FREE** at [Yugabyte University](https://university.yugabyte.com/courses/yugabytedb-ycql-development).
+
+---
+
+## Version History
+Here is a list of recent changes:
+- 2023.06.21
+  -  Update to YugabyteDB to 2.19
+  -  Change to use Python 3.9.6
+  -  Fix typos and screenshots for kernel selection
+  
