@@ -1,15 +1,15 @@
-<div style="width:100%; background-color: #000041"><a target="_blank" href="http://university.yugabyte.com"><img src="assets/YBU_Logo.png" /></a></div>
+<div style="width:100%; background-color: #121017;"><a target="_blank" href="http://university.yugabyte.com?utm_source=gitpod&utm_medium=notebook"><img src="assets/YBU_Logo.png" /></a></div><br>
 
 # YCQL Development
 
-[YugabyteDB](https://www.yugabyte.com/) is the leading open source, distributed SQL database. The database has two APIs: YCQL and YSQL.
+[YugabyteDB](https://www.yugabyte.com/?utm_source=gitpod&utm_medium=notebook) is the leading open source, distributed SQL database. The database has two APIs: YCQL and YSQL.
 
 This repository is a lab resource in the free, **YugabyteDB YCQL Development** course from Yugabyte University.
 
 > **YugabyteDB YCQL Development**
 >
 > Enroll for **FREE** at ...
-> [Yugabyte University](https://university.yugabyte.com/courses/yugabytedb-ycql-development).
+> [Yugabyte University](https://university.yugabyte.com/courses/yugabytedb-ycql-development?utm_source=gitpod&utm_medium=notebook).
 >
 
 ---
@@ -71,12 +71,15 @@ You can start, restart, and delete your Gitpod workspaces. After you sign in to 
 - Gitpod builds a docker image for VS Code, related extensions, and YugabyteDB. This takes a few minutes. However, after your image is created, subsequent launches will be much faster.
 
 **Where can I find help and support?**
-- You can ask questions in the discussion forum for this lab in the course player at Yugabyte University. Enroll for **FREE** at [Yugabyte University](https://university.yugabyte.com/courses/yugabytedb-ycql-development).
+- You can ask questions in the discussion forum for this lab in the course player at Yugabyte University. Enroll for **FREE** at [Yugabyte University](https://university.yugabyte.com/courses/yugabytedb-ycql-development?utm_source=gitpod&utm_medium=notebook).
 
 ---
 
 ## Version History
 Here is a list of recent changes:
+- 2024.01.30
+  -  Update to YugabyteDB to 2.20.1
+  -  Change to use Python 3.12
 - 2023.06.21
   -  Update to YugabyteDB to 2.19
   -  Change to use Python 3.9.6
