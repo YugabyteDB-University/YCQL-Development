@@ -39,7 +39,6 @@ RUN echo "\n# yugabytedb executable path" >> ~/.bashrc
 RUN echo "export PATH=\$PATH:$YB_PATH_BIN/bin/" >> ~/.bashrc
 
 
-
 ENV MY_GITPOD_REPO=YCQL-Development
 ENV PATH="$YB_BIN_PATH/bin/:$PATH"
 ENV N1=1
