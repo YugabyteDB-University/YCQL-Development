@@ -26,6 +26,7 @@ if [[ $# -eq 1 ]]; then
 fi
 
 YB_PATH_BASE=/home/gitpod/yugabyte/var
+YB_PATH_BIN=/home/gitpod/yugabyte/bin
 
 start_node() {
     local node_number=$1
@@ -116,8 +117,12 @@ error_fix_bad_node_count() {
   echo "./$START_SCRIPT $MODE"
 }
 
+
 MIN_NODE_NUM=1
 MAX_NODE_NUM=3
+
+cd $YB_PATH_BIN
+
 # Loop to start nodes, up to 3 MAX_NODE_NUM nodes
 while (( $MIN_NODE_NUM <= $MAX_NODE_NUM )); do
     echo "Trying to start nodes... $MIN_NODE_NUM of $MAX_NODE_NUM"
