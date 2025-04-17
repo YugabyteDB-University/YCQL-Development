@@ -13,21 +13,20 @@ tasks:
 
       # Install all required Python packages inside the venv
       pip install --upgrade pip
-      pip install \
-        html2text \
-        jq \
-        ipython-sql~=0.5 \
-        sqlparse \
-        SQLAlchemy \
-        psycopg2-binary \
-        pickleshare \
-        pgspecial \
-        pandas \
-        six \
-        ipykernel
+      pip install html2text
+      pip install jq
+      pip install ipython-sql~=0.5 --upgrade
+      pip install sqlparse
+      pip install SQLAlchemy --upgrade 
+      pip install psycopg2-binary
+      pip install pickleshare
+      pip install pgspecial
+      pip install pandas
+      pip install six
 
       # Register this venv with Jupyter
       python -m ipykernel install --user --name=python311 --display-name "Python 3.11 (YB-friendly)"
+      touch /tmp/python311_ready
     command: |
       echo "✅ Python 3.11 (YB-friendly) with Jupyter ipython kernel ready"
   - name: htop
@@ -40,6 +39,7 @@ tasks:
         chmod 777 ${GITPOD_REPO_ROOT}/start_all.sh
         chmod 777 ${GITPOD_REPO_ROOT}/stop_and_destroy_all.sh
       )
+      while [ ! -f /tmp/python311_ready ]; do echo "⏳ Waiting to complete the installation of the Python 3.11.8 environment. Sorry, but this may take a few minutes."; sleep 2; done   
     command: |
       cd ${GITPOD_REPO_ROOT}
       ./start_all.sh region
