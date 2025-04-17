@@ -2,8 +2,11 @@ FROM gitpod/workspace-full
 
 #ARG YB_VERSION=2.19.2.0
 #ARG YB_DOWNLOAD_URL=https://downloads.yugabyte.com/releases/2.19.2.0/yugabyte-2.19.2.0-b121-linux-x86_64.tar.gz
-ARG YB_VERSION=2.20.1.3
-ARG YB_DOWNLOAD_URL=https://downloads.yugabyte.com/releases/2.20.1.3/yugabyte-2.20.1.3-b3-linux-x86_64.tar.gz
+
+#ARG YB_VERSION=2.20.1.3
+#ARG YB_DOWNLOAD_URL=https://downloads.yugabyte.com/releases/2.20.1.3/yugabyte-2.20.1.3-b3-linux-x86_64.tar.gz
+ARG YB_VERSION=2.20.10.0
+ARG YB_DOWNLOAD_URL=https://software.yugabyte.com/releases/2.20.10.0/yugabyte-2.20.10.0-b29-linux-x86_64.tar.gz
 ARG YB_PATH_BIN=/home/gitpod/yugabyte
 ARG YB_PATH_BASE=/home/gitpod/yugabyte/var
 

@@ -1,23 +1,41 @@
 image:
-  file: .gitpod.DockerFile
+  file: .gitpod.Dockerfile
+
 tasks:
-  - name: htop
-    before: |
-      sdk install java < /dev/null
+  - name: setup-python-311
     init: |
+      # Install and set Python 3.11.8 via pyenv
+      pyenv install 3.11.8
+      pyenv global 3.11.8
+
+      # Create a virtual environment
+      python -m venv ~/.venvs/py311
+      source ~/.venvs/py311/bin/activate
+
+      # Install all required Python packages inside the venv
       pip install --upgrade pip
-      pip install html2text
-      pip install jq
-      pip install ipython-sql~=0.5 --upgrade
-      pip install sqlparse
-      pip install SQLAlchemy --upgrade 
-      pip install psycopg2-binary
-      pip install pickleshare
-      pip install pgspecial
-      pip install pandas
-      pip install six
+      pip install \
+        html2text \
+        jq \
+        ipython-sql~=0.5 \
+        sqlparse \
+        SQLAlchemy \
+        psycopg2-binary \
+        pickleshare \
+        pgspecial \
+        pandas \
+        six \
+        ipykernel
+
+      # Register this venv with Jupyter
+      python -m ipykernel install --user --name=python311 --display-name "Python 3.11 (YB-friendly)"
+    command: |
+      echo "✅ Python 3.11 (YB-friendly) with Jupyter ipython kernel ready"
+
+  - name: htop
     command: |
       htop
+
   - name: ybu-lab
     init: |
       (
@@ -29,6 +47,7 @@ tasks:
       cd ${GITPOD_REPO_ROOT}
       ./start_all.sh region
       gp open 01_Lab_Setup.ipynb
+
 ports:
   - port: 5433
     description: YSQL API Port
@@ -60,6 +79,7 @@ ports:
     onOpen: open-browser
   - port: 37843
     onOpen: ignore
+
 vscode:
   extensions:
     - ms-python.python
@@ -68,4 +88,3 @@ vscode:
     - ms-toolsai.jupyter-renderers
     - ms-toolsai.vscode-jupyter-cell-tags
     - ms-toolsai.vscode-jupyter-slideshow
-
