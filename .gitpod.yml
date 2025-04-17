@@ -4,7 +4,7 @@ tasks:
   - name: setup-python-311
     init: |
       # Install and set Python 3.11.8 via pyenv
-      pyenv install 3.11.8
+      pyenv install -s 3.11.8
       pyenv global 3.11.8
 
       # Create a virtual environment
