@@ -1,6 +1,5 @@
 image:
-  file: .gitpod.Dockerfile
-
+  file: .gitpod.DockerFile
 tasks:
   - name: setup-python-311
     init: |
@@ -31,11 +30,9 @@ tasks:
       python -m ipykernel install --user --name=python311 --display-name "Python 3.11 (YB-friendly)"
     command: |
       echo "✅ Python 3.11 (YB-friendly) with Jupyter ipython kernel ready"
-
   - name: htop
     command: |
       htop
-
   - name: ybu-lab
     init: |
       (
@@ -47,7 +44,6 @@ tasks:
       cd ${GITPOD_REPO_ROOT}
       ./start_all.sh region
       gp open 01_Lab_Setup.ipynb
-
 ports:
   - port: 5433
     description: YSQL API Port
@@ -79,7 +75,6 @@ ports:
     onOpen: open-browser
   - port: 37843
     onOpen: ignore
-
 vscode:
   extensions:
     - ms-python.python

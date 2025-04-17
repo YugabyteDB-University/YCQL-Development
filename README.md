@@ -77,9 +77,12 @@ You can start, restart, and delete your Gitpod workspaces. After you sign in to 
 
 ## Version History
 Here is a list of recent changes:
+- 2025.04.16
+  -  Update to YugabyteDB to 2.20.1
+  -  Reverted to use Python 3.11.8
 - 2024.01.30
   -  Update to YugabyteDB to 2.20.1
-  -  Change to use Python 3.12
+  -  Change to use Python 3.10.1
 - 2023.06.21
   -  Update to YugabyteDB to 2.19
   -  Change to use Python 3.9.6
